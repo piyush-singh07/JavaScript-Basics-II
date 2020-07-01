@@ -10,3 +10,5 @@ A Repository containing some more concepts of JS
 6. AJAX
 7. callback
 8. closures
+9. Data Structures
+10. Event Bubbling
