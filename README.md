@@ -18,4 +18,8 @@ A Repository containing some more concepts of JS
 7. callback
 8. closures
 9. Data Structures
+	* Map
+	* WeakMap
+	* Set
+	* WeakSet
 10. Event Bubbling
