@@ -15,7 +15,7 @@ A Repository containing some more concepts of JS
 4. JSON
 5. Promises
 6. AJAX
-7. callback
+7. callbacks
 8. closures
 9. Data Structures
 	* Map
