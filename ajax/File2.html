@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!--
+            URL1 : http://restcountries.eu/rest/v2/all 
+            URL2 : https://www.w3schools.com/angular/customers.php
+
+    -->
+
+    <script>
+        const url1 = 'http://restcountries.eu/rest/v2/all';
+        const url2 = 'https://www.w3schools.com/angular/customers.php';
+
+        function restAPI(url) {
+            $.ajax({
+                url: url,
+                method: 'GET',
+                success: (successResponse) => {
+                    console.log(successResponse)
+                },
+                error: (errResponse) => {
+                    console.log(errResponse)
+                }
+            })
+        };
+
+        restAPI(url1);
+        restAPI(url2)
+    </script>
+
+</body>
+
+</html>
