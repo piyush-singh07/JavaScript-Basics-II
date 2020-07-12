@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    // var does not allow holding multiple copies so o/p will be 5 times 5 will be printed
+    for (var index = 0; index < 5; index++) {
+        setTimeout(() => {
+            console.log(index)
+        }, 5000)
+
+    }
+
+    //in case of let , it allows holding of multiple copies so o/p will be 0,1,2,3,4
+
+    for (let index = 0; index < 5; index++) {
+        setTimeout(() => {
+            console.log(index)
+        }, 5000)
+
+    }
+</script>
+
+</html>
