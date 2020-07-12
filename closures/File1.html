@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        function fun_one() {
+            var x = 10;
+            var y = 20;
+            return () => {
+                console.log(x);
+                console.log(y);
+            };
+        };
+        console.dir(fun_one());
+        console.log(fun_one());
+        console.log(fun_one()()); //0: Closure (fun_one) {x: 10, y: 20}
+    </script>
+
+</body>
+
+</html>
