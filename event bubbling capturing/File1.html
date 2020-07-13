@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="parent" style="width: 200px;height: 200px;background-color: red;padding: 10px;">
+        <div id="child" style="width: 220px;height: 220px;background-color: green;margin-left: 30px;padding: 20px;">
+            <div id="subchild" style="width: 260px;height: 260px;background-color: yellow;">
+
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        // event bubbling
+        //from bottom to top 
+        $(document).ready(() => {
+            $('#parent').click(() => {
+                console.log('parent')
+            });
+            $('#child').click(() => {
+                console.log('child')
+            });
+            $('#subchild').click(() => {
+                console.log('subchild')
+            });
+        });
+    </script>
+</body>
+
+</html>
