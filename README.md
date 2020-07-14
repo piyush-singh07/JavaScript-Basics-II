@@ -23,3 +23,5 @@ A Repository containing some more concepts of JS
 	* Set
 	* WeakSet
 10. Event Bubbling
+11. Event Capuring
+12. Generators
