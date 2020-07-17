@@ -25,6 +25,6 @@ A Repository containing some more concepts of JS
 10. Event Bubbling
 11. Event Capuring
 12. Generators
-13. call(),apply() and bind()
+13. call(),apply() and bind() methods
 14. regex
 15. array manipulations
