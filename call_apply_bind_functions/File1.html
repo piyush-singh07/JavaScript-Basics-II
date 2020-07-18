@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let obj = {
+            num: 1
+        };
+
+        function fun_one(arg) {
+            return this.num + arg;
+        }
+
+        console.log(fun_one(20)) // NaN as num is not in the context
+
+        //To create a context then we have to use call() functions
+
+        console.log(fun_one.call(obj, 9));
+    </script>
+</body>
+
+</html>
