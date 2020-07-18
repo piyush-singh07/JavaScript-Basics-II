@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!--
+
+    apply() function
+    for this function if we want to have an array to be passed in the parameter and not the independent values so
+    we can use apply() functions 
+
+-->
+
+<body>
+    <script>
+        let obj = {
+            num1: 10,
+            num2: 20
+        };
+
+        function fun_one(arg1, arg2, arg3) {
+            return this.num1 + this.num2 + arg1 + arg2 + arg3;
+        }
+
+        console.log(fun_one.apply(obj, [30, 40, 50]));
+
+        let arr = [1000, 2000, 3000];
+        console.log(fun_one.apply(obj, arr))
+    </script>
+</body>
+
+</html>

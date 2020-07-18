@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.10.2/underscore-min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let arr = [10, 20, 30, 10, 40, 20];
+        console.log([...new Set(arr)]); // [10, 20, 30, 40]
+        console.log(_.uniq(arr)); //[10, 20, 30, 40]
+
+        console.log(
+            arr.filter((element, index) => {
+                return arr.indexOf(element) == index;
+            })
+        ); //[10, 20, 30, 40]
+    </script>
+
+</body>
+
+</html>
