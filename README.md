@@ -27,4 +27,4 @@ A Repository containing some more concepts of JS
 12. Generators
 13. call(),apply() and bind() functions
 14. regex
-15. array manipulations
+15. array manipulations and function
