@@ -13,7 +13,7 @@ A Repository containing some more concepts of JS
 	* IIFE (Immidiate Invokable Functional Expressions)
 3. prototype
 4. JSON
-5. Promises
+5. Promises Concept
 6. AJAX
 7. callbacks
 8. closures
